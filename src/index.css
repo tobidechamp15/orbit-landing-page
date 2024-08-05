@@ -218,6 +218,66 @@ body {
   max-width: 640px;
   color: #475467;
 }
+.questions-head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+.questions-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #475467;
+}
+.question-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 384px;
+}
+
+.question-card span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #101828;
+}
+
+.question-card map {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #475467;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+}
+
+.circle-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: relative;
+  z-index: 1;
+  margin: 0 -20px; /* Adjust this value to control overlap */
+}
+
+.middle-image {
+  z-index: 2;
+}
+
 @media screen and (max-width: 768px) {
   .heading {
     font-style: normal;
