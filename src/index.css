@@ -25,6 +25,15 @@ body {
   color: #003320;
 }
 
+.number span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #003320;
+}
+
 .nav-items span:nth-child(1) {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -160,6 +169,41 @@ body {
   justify-content: center;
 }
 
+.abt-head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+.abt-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #475467;
+}
+
+.number span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #003320;
+}
+
+.number map {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #101828;
+}
+
 @media screen and (max-width: 768px) {
   .heading {
     font-style: normal;
@@ -167,5 +211,13 @@ body {
     font-size: 24px;
     line-height: normal;
     letter-spacing: -0.06em;
+  }
+
+  .abt-desc {
+    font-size: 15px;
+  }
+
+  .abt-head {
+    font-size: 25px;
   }
 }
