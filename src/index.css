@@ -204,6 +204,20 @@ body {
   color: #101828;
 }
 
+.res-head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+.res-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 640px;
+  color: #475467;
+}
 @media screen and (max-width: 768px) {
   .heading {
     font-style: normal;
@@ -219,5 +233,11 @@ body {
 
   .abt-head {
     font-size: 25px;
+  }
+  .res-head {
+    font-size: 25px;
+  }
+  .res-desc {
+    font-size: 15px;
   }
 }
