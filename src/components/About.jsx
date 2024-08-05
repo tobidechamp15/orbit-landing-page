@@ -8,7 +8,7 @@ const About = () => {
         Explore the transformative results of our efforts to empower women and
         drive economic growth.
       </span>
-      <div className=" flex numbers justify-center gap-[72px] flex-wrap items-center ">
+      <div className=" flex numbers justify-center gap-[72px] flex-wrap items-center bg-[#F9FAFB] p-[30px] rounded-[16px]">
         <div className="number flex flex-col gap-3">
           <span>40,000+</span>
           <map>Total Loans Distributed</map>
