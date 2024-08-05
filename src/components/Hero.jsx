@@ -11,7 +11,7 @@ const Hero = () => {
       <span className="hero-desc">
         Connecting entrepreneurs to opportunity, one market at a time
       </span>
-      <span className="get-started my-[48px]">Get Started</span>
+      <span className="get-started my-[48px] rounded-lg">Get Started</span>
     </div>
   );
 };
