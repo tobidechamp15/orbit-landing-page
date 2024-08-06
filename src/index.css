@@ -297,7 +297,55 @@ body {
   font-size: 16px;
   color: #e4e7ec;
 }
+.support-head {
+  font-weight: 600;
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.support-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #e9d7fe;
+}
+.support-grad {
+  display: flex;
+  max-width: 1216px !important;
+  flex-direction: column;
+  width: 70%;
+  gap: 48px;
+
+  background: linear-gradient(262.1deg, #009960 -54.89%, #003320 91.11%);
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 1102px) {
+  .chart-margin {
+    margin-bottom: 350px;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1102px) {
+  .chart-margin {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .support-grad {
+    width: 100% !important;
+    border-radius: 0%;
+    padding: 130px 20px;
+  }
+}
 @media screen and (max-width: 768px) {
+  .support-grad {
+    width: 80%;
+  }
+  .support-head {
+    font-size: 25px;
+  }
   .heading {
     font-style: normal;
     font-weight: 700;
