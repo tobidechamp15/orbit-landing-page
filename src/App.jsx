@@ -5,6 +5,7 @@ import HeroImage from "./components/HeroImage";
 import Navbar from "./components/Navbar";
 import Questions from "./components/Questions";
 import Reason from "./components/Reason";
+import Support from "./components/Support";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <HeroImage />
       <About />
       <Reason />
+      <Support />
       <Questions />
       <Footer />
     </>
