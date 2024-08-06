@@ -1,3 +1,370 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.bg-pattern {
+  background-image: url("./assets/bg-pattern.svg");
+}
+
+.nav-items {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 48px;
+}
+
+.side-items span {
+  color: #003320;
+}
+
+.contact-item {
+  color: #003320;
+}
+
+.number span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #003320;
+}
+
+.nav-items span:nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #003320;
+}
+
+.login {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.sign-up {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  background: #003320;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.hamburgerMenu {
+  flex-direction: column;
+  width: 40px;
+  height: 30px;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburgerMenu.active {
+  position: fixed;
+  right: 0;
+}
+
+.bar {
+  background-color: #003320;
+  height: 4px;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.hamburgerMenu .bar:nth-child(1) {
+  width: 35%;
+}
+
+.hamburgerMenu .bar:nth-child(3) {
+  width: 35%;
+  align-self: end;
+}
+
+.hamburgerMenu:hover .bar {
+  transform: scaleX(1.1);
+}
+
+.hamburgerMenu.active .bar:nth-child(1) {
+  width: 100%;
+  transform: rotate(45deg) translateY(15px);
+}
+
+.hamburgerMenu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerMenu.active .bar:nth-child(3) {
+  width: 100%;
+  transform: rotate(-45deg) translateY(-15px);
+}
+
+.in-active-item {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #aaacae;
+}
+
+.badge-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 10px 4px 4px;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 10px;
+}
+
+.heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+.hero-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #475467;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 24px;
+  gap: 12px;
+  background: #003320;
+  color: white;
+  justify-content: center;
+}
+
+.abt-head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+.abt-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #475467;
+}
+
+.number span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #003320;
+}
+
+.number map {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #101828;
+}
+
+.res-head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+.res-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 640px;
+  color: #475467;
+}
+.questions-head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+.questions-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #475467;
+}
+.question-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 384px;
+}
+
+.question-card span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #101828;
+}
+
+.question-card map {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #475467;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+}
+
+.circle-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: relative;
+  z-index: 1;
+  margin: 0 -20px; /* Adjust this value to control overlap */
+}
+
+.middle-image {
+  z-index: 2;
+}
+
+.foot-heads {
+  display: flex;
+  min-width: 176px;
+  gap: 16px;
+  flex-direction: column;
+}
+.foot-heads map {
+  font-style: normal;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(208, 213, 221, 0.5);
+}
+.foot-heads span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #e4e7ec;
+}
+.support-head {
+  font-weight: 600;
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.support-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #e9d7fe;
+}
+.support-grad {
+  display: flex;
+  max-width: 1216px !important;
+  flex-direction: column;
+  width: 70%;
+  gap: 48px;
+
+  background: linear-gradient(262.1deg, #009960 -54.89%, #003320 91.11%);
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 1102px) {
+  .chart-margin {
+    margin-bottom: 350px;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1102px) {
+  .chart-margin {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .support-grad {
+    width: 100% !important;
+    border-radius: 0%;
+    padding: 130px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .support-grad {
+    width: 80%;
+  }
+  .support-head {
+    font-size: 25px;
+  }
+  .heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: -0.06em;
+  }
+
+  .abt-desc {
+    font-size: 15px;
+  }
+
+  .abt-head {
+    font-size: 25px;
+  }
+  .res-head {
+    font-size: 25px;
+  }
+  .res-desc {
+    font-size: 15px;
+  }
+}
