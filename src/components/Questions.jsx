@@ -11,7 +11,7 @@ import ayra3 from "../assets/ayra 3.svg";
 
 const Questions = () => {
   return (
-    <div className="py-[96px] flex flex-col items-center">
+    <div className="py-[96px] flex flex-col items-center px-3">
       <section className="flex flex-col gap-3 ">
         <span className="questions-head">Frequently asked questions</span>
         <span className="questions-desc">
