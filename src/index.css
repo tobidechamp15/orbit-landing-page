@@ -278,6 +278,25 @@ body {
   z-index: 2;
 }
 
+.foot-heads {
+  display: flex;
+  min-width: 176px;
+  gap: 16px;
+  flex-direction: column;
+}
+.foot-heads map {
+  font-style: normal;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(208, 213, 221, 0.5);
+}
+.foot-heads span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #e4e7ec;
+}
 @media screen and (max-width: 768px) {
   .heading {
     font-style: normal;
